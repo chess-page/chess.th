@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr" itemscope itemtype="https://schema.org/Game">
+  <head>
+    <title>กติกาหมากรุกสากล — คู่มือชัดเจนและครบถ้วน</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- SEO -->
+    <meta name="description" content="อธิบายกติกาหมากรุกสากลอย่างชัดเจน: การตั้งกระดาน, การเดินของหมาก, การเข้าป้อม, การกินผ่าน (en passant), การเลื่อนขั้น, รุกจน, สเตลเมต และการเสมอ (รวมกฎ 50 เดิน).">
+    <meta name="keywords" content="กติกาหมากรุกสากล, หมากรุก, วิธีเล่นหมากรุก, เข้าป้อม, en passant, เลื่อนขั้น, รุกจน, สเตลเมต, เสมอ, กฎ 50 เดิน">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Cyril Veltin">
+
+    <!-- Canonical + languages -->
+    <link rel="canonical" href="https://th.chess.page/">
+    <link rel="alternate" hreflang="en" href="https://en.chess.page/">
+    <link rel="alternate" hreflang="fr" href="https://fr.chess.page/">
+    <link rel="alternate" hreflang="ja" href="https://ja.chess.page/">
+    <link rel="alternate" hreflang="th" href="https://th.chess.page/">
+    <link rel="alternate" hreflang="zh" href="https://zh.chess.page/">
+    <link rel="alternate" hreflang="x-default" href="https://chess.page/">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/props.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/all.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+
+    <!-- License -->
+    <meta name="dcterms.rights" content="https://creativecommons.org/publicdomain/zero/1.0/">
+    <meta name="dcterms.rightsHolder" content="Cyril Veltin">
+    <meta name="license" content="CC0-1.0">
+    <link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Chess Page">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://th.chess.page/">
+    <meta property="og:title" content="กติกาหมากรุกสากล — คู่มือชัดเจนและครบถ้วน">
+    <meta property="og:description" content="กติกาหมากรุกสากล: การตั้งกระดาน, การเดิน, เดินพิเศษ, รุกจน, สเตลเมต และการเสมอ (รวมกฎ 50 เดิน).">
+    <meta property="og:image" content="https://th.chess.page/img/caissa-and-mercury-apollo-game.jpeg">
+    <meta property="og:image:alt" content="ภาพประกอบไคซา (สาธารณสมบัติ).">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="กติกาหมากรุกสากล — คู่มือชัดเจนและครบถ้วน">
+    <meta name="twitter:description" content="อธิบายกติกาหมากรุกสากลอย่างชัดเจน: หมาก, การเดิน, เข้าป้อม, กินผ่าน, เลื่อนขั้น, รุกจน, สเตลเมต และการเสมอ.">
+    <meta name="twitter:image" content="https://th.chess.page/img/caissa-and-mercury-apollo-game.jpeg">
+    <meta name="twitter:image:alt" content="ภาพประกอบไคซา (สาธารณสมบัติ).">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@id": "https://th.chess.page/#game",
+        "@type": "Game",
+        "name": "หมากรุกสากล",
+        "alternateName": "ราชาแห่งเกม",
+        "description": "เกมวางแผนสำหรับผู้เล่น 2 คนบนกระดาน 64 ช่อง เป้าหมายคือชนะโดยรุกจนกษัตริย์ของฝ่ายตรงข้าม (checkmate).",
+        "url": "https://th.chess.page/",
+        "image": "https://th.chess.page/img/caissa-and-mercury-apollo-game.jpeg",
+        "inLanguage": "th-TH",
+        "numberOfPlayers": "2",
+        "keywords": [
+          "หมากรุกสากล",
+          "กติกาหมากรุกสากล",
+          "เกมวางแผน",
+          "รุกจน",
+          "ตัวหมาก"
+        ],
+        "educationalUse": [
+          "กลยุทธ์",
+          "ตรรกะ",
+          "การวางแผน"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "copyrightHolder": {
+          "@type": "Person",
+          "name": "Cyril Veltin"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img src="favicon.svg" alt="โลโก้ Chess Page" height="1024" width="1024">
+    </header>
+
+    <main>
+      <article>
+        <header>
+          <h1>กติกาหมากรุกสากล</h1>
+
+          <p>
+            <strong>หมากรุกสากล</strong>เป็นเกมวางแผนสำหรับ<strong>ผู้เล่น 2 คน</strong>
+            เล่นบนกระดานขนาด<strong>8 × 8</strong> (64 ช่อง)
+          </p>
+        </header>
+
+        <nav aria-label="สารบัญ">
+          <h2>สารบัญ</h2>
+          <ol>
+            <li><a href="./#objective">เป้าหมายของเกม</a></li>
+            <li><a href="./#setup">การตั้งกระดาน</a></li>
+            <li><a href="./#piece-movement">การเดินของตัวหมาก</a></li>
+            <li><a href="./#special-moves">การเดินพิเศษ</a></li>
+            <li><a href="./#checkmate">การรุกและรุกจน</a></li>
+            <li><a href="./#stalemate-and-draw">สเตลเมตและการเสมอ</a></li>
+            <li><a href="./#end-of-game">การจบเกม</a></li>
+            <li><a href="./#art-and-literature">หมากรุกในศิลปะและวรรณกรรม</a></li>
+          </ol>
+        </nav>
+
+        <section id="objective">
+          <h2>เป้าหมายของเกม</h2>
+
+          <p>
+            เป้าหมายคือ<strong>ชนะเกม</strong>โดยทำให้<strong>การจับกษัตริย์ของฝ่ายตรงข้าม</strong>หลีกเลี่ยงไม่ได้
+          </p>
+
+          <p>
+            ในทางปฏิบัติ เกมจะจบทันทีเมื่อเกิด<strong>รุกจน (checkmate)</strong>:
+            กษัตริย์ถูกรุก และไม่มี<strong>การเดินที่ถูกกติกา</strong>ใด ๆ ที่จะหลีกเลี่ยงการถูกจับในตาถัดไป
+          </p>
+
+          <p>
+            ในหมากรุกสากล กษัตริย์<strong>ไม่ถูกจับจริง</strong>: เมื่อรุกจนเกิดขึ้น เกมถือว่าสิ้นสุดทันที
+          </p>
+        </section>
+
+        <section id="setup">
+          <h2>การตั้งกระดาน</h2>
+
+          <h3>กระดาน</h3>
+          <ul>
+            <li>กระดานเป็นตาราง<strong>8 คอลัมน์</strong>และ<strong>8 แถว</strong></li>
+            <li>ช่องสลับสีอ่อนและสีเข้ม</li>
+            <li>วางกระดานให้มุมขวาล่างของผู้เล่นแต่ละฝ่ายเป็น<strong>ช่องสีอ่อน</strong></li>
+          </ul>
+
+          <h3>ผู้เล่นและการเดิน</h3>
+          <ul>
+            <li><strong>ฝ่ายขาว</strong>เดินก่อนเสมอ</li>
+            <li>จากนั้น<strong>ฝ่ายดำ</strong>เดิน และผลัดกันไปเรื่อย ๆ</li>
+          </ul>
+
+          <h3>ตัวหมากเริ่มต้น</h3>
+          <ul>
+            <li>แต่ละฝ่ายเริ่มด้วย<strong>16 ตัว</strong>: กษัตริย์ 1, ราชินี 1, เรือ (rook) 2, บิชอป 2, ม้า (knight) 2, เบี้ย (pawn) 8</li>
+            <li>แถวที่อยู่ใกล้ผู้เล่นที่สุดวางหมากหลัก (กษัตริย์ ราชินี เรือ บิชอป ม้า)</li>
+            <li>แถวถัดไปวางเบี้ย</li>
+          </ul>
+
+          <h3>ลำดับการวางหมาก</h3>
+          <p>
+            จากมุมมองฝ่ายขาว แถวเริ่มต้นเรียงจากซ้ายไปขวาเป็น:
+            <strong>เรือ</strong>, <strong>ม้า</strong>, <strong>บิชอป</strong>, <strong>ราชินี</strong>, <strong>กษัตริย์</strong>,
+            <strong>บิชอป</strong>, <strong>ม้า</strong>, <strong>เรือ</strong>
+          </p>
+
+          <p>
+            <strong>ราชินีฝ่ายขาว</strong>เริ่มบน<strong>ช่องสีอ่อน</strong>
+            และ<strong>ราชินีฝ่ายดำ</strong>เริ่มบน<strong>ช่องสีเข้ม</strong>
+          </p>
+
+          <p>ตำแหน่งเริ่มต้นเป็นดังนี้:</p>
+
+          <table class="squares" aria-label="กระดานหมากรุกในตำแหน่งเริ่มต้น">
+            <caption>ตำแหน่งเริ่มต้นของหมากรุกสากล</caption>
+
+            <tbody>
+              <tr class="rank">
+                <td class="square" data-coordinate="a8" aria-label="a8, เรือดำ">
+                  <img class="piece" draggable="true" data-code="c:r" data-style="chess" data-side="second" src="img/sides/second/representations/western/rook.svg" alt="เรือดำ">
+                </td>
+                <td class="square" data-coordinate="b8" aria-label="b8, ม้าดำ">
+                  <img class="piece" draggable="true" data-code="c:n" data-style="chess" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="ม้าดำ">
+                </td>
+                <td class="square" data-coordinate="c8" aria-label="c8, บิชอปดำ">
+                  <img class="piece" draggable="true" data-code="c:b" data-style="chess" data-side="second" src="img/sides/second/representations/western/bishop.svg" alt="บิชอปดำ">
+                </td>
+                <td class="square" data-coordinate="d8" aria-label="d8, ราชินีดำ">
+                  <img class="piece" draggable="true" data-code="c:q" data-style="chess" data-side="second" src="img/sides/second/representations/western/queen.svg" alt="ราชินีดำ">
+                </td>
+                <td class="square" data-coordinate="e8" aria-label="e8, กษัตริย์ดำ">
+                  <img class="piece" draggable="true" data-code="c:k^" data-style="chess" data-side="second" src="img/sides/second/representations/western/king.svg" alt="กษัตริย์ดำ">
+                </td>
+                <td class="square" data-coordinate="f8" aria-label="f8, บิชอปดำ">
+                  <img class="piece" draggable="true" data-code="c:b" data-style="chess" data-side="second" src="img/sides/second/representations/western/bishop.svg" alt="บิชอปดำ">
+                </td>
+                <td class="square" data-coordinate="g8" aria-label="g8, ม้าดำ">
+                  <img class="piece" draggable="true" data-code="c:n" data-style="chess" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="ม้าดำ">
+                </td>
+                <td class="square" data-coordinate="h8" aria-label="h8, เรือดำ">
+                  <img class="piece" draggable="true" data-code="c:r" data-style="chess" data-side="second" src="img/sides/second/representations/western/rook.svg" alt="เรือดำ">
+                </td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a7" aria-label="a7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="b7" aria-label="b7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="c7" aria-label="c7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="d7" aria-label="d7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="e7" aria-label="e7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="f7" aria-label="f7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="g7" aria-label="g7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+                <td class="square" data-coordinate="h7" aria-label="h7, เบี้ยดำ">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ยดำ">
+                </td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a6" aria-label="a6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="b6" aria-label="b6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="c6" aria-label="c6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="d6" aria-label="d6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="e6" aria-label="e6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="f6" aria-label="f6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="g6" aria-label="g6, ช่องว่าง"></td>
+                <td class="square" data-coordinate="h6" aria-label="h6, ช่องว่าง"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a5" aria-label="a5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="b5" aria-label="b5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="c5" aria-label="c5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="d5" aria-label="d5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="e5" aria-label="e5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="f5" aria-label="f5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="g5" aria-label="g5, ช่องว่าง"></td>
+                <td class="square" data-coordinate="h5" aria-label="h5, ช่องว่าง"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a4" aria-label="a4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="b4" aria-label="b4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="c4" aria-label="c4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="d4" aria-label="d4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="e4" aria-label="e4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="f4" aria-label="f4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="g4" aria-label="g4, ช่องว่าง"></td>
+                <td class="square" data-coordinate="h4" aria-label="h4, ช่องว่าง"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a3" aria-label="a3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="b3" aria-label="b3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="c3" aria-label="c3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="d3" aria-label="d3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="e3" aria-label="e3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="f3" aria-label="f3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="g3" aria-label="g3, ช่องว่าง"></td>
+                <td class="square" data-coordinate="h3" aria-label="h3, ช่องว่าง"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a2" aria-label="a2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="b2" aria-label="b2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="c2" aria-label="c2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="d2" aria-label="d2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="e2" aria-label="e2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="f2" aria-label="f2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="g2" aria-label="g2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+                <td class="square" data-coordinate="h2" aria-label="h2, เบี้ยขาว">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ยขาว">
+                </td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a1" aria-label="a1, เรือขาว">
+                  <img class="piece" draggable="true" data-code="C:R" data-style="chess" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="เรือขาว">
+                </td>
+                <td class="square" data-coordinate="b1" aria-label="b1, ม้าขาว">
+                  <img class="piece" draggable="true" data-code="C:N" data-style="chess" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้าขาว">
+                </td>
+                <td class="square" data-coordinate="c1" aria-label="c1, บิชอปขาว">
+                  <img class="piece" draggable="true" data-code="C:B" data-style="chess" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="บิชอปขาว">
+                </td>
+                <td class="square" data-coordinate="d1" aria-label="d1, ราชินีขาว">
+                  <img class="piece" draggable="true" data-code="C:Q" data-style="chess" data-side="first" src="img/sides/first/representations/western/queen.svg" alt="ราชินีขาว">
+                </td>
+                <td class="square" data-coordinate="e1" aria-label="e1, กษัตริย์ขาว">
+                  <img class="piece" draggable="true" data-code="C:K^" data-style="chess" data-side="first" src="img/sides/first/representations/western/king.svg" alt="กษัตริย์ขาว">
+                </td>
+                <td class="square" data-coordinate="f1" aria-label="f1, บิชอปขาว">
+                  <img class="piece" draggable="true" data-code="C:B" data-style="chess" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="บิชอปขาว">
+                </td>
+                <td class="square" data-coordinate="g1" aria-label="g1, ม้าขาว">
+                  <img class="piece" draggable="true" data-code="C:N" data-style="chess" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้าขาว">
+                </td>
+                <td class="square" data-coordinate="h1" aria-label="h1, เรือขาว">
+                  <img class="piece" draggable="true" data-code="C:R" data-style="chess" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="เรือขาว">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            เว้นแต่จะระบุไว้เป็นอย่างอื่น แผนภาพจะแสดงจากมุมมองฝ่ายขาว (ฝ่ายขาวอยู่ด้านล่างของภาพ)
+          </p>
+        </section>
+
+        <section id="piece-movement">
+          <h2>การเดินของตัวหมาก</h2>
+
+          <h3>หลักทั่วไป</h3>
+          <ul>
+            <li>ในแต่ละตา ผู้เล่นเดิน<strong>1 เดิน</strong> โดยขยับหมากของตน<strong>1 ตัว</strong></li>
+            <li>หมากจะย้ายไปยัง<strong>ช่องปลายทาง</strong></li>
+            <li>ช่องปลายทางต้อง<strong>ว่าง</strong>หรือมี<strong>หมากฝ่ายตรงข้าม</strong></li>
+            <li>ไม่สามารถเดินไปทับหมากของตนเองได้</li>
+            <li>ถ้าช่องปลายทางมีหมากฝ่ายตรงข้าม จะ<strong>กิน</strong>หมากนั้นและนำออกจากกระดาน</li>
+            <li>ยกเว้นม้า หมากอื่น ๆ ไม่สามารถข้ามหมากได้ (เส้นทางต้องโล่ง)</li>
+            <li>การเดินใด ๆ ที่ทำให้กษัตริย์ของตน<strong>ถูกรุก</strong> หรือยังคง<strong>ถูกรุก</strong>อยู่ ถือเป็น<strong>การเดินผิดกติกา</strong></li>
+          </ul>
+
+          <h3>การเดินของหมากแต่ละตัว</h3>
+
+          <h4>กษัตริย์ (King)</h4>
+          <ul>
+            <li>เดินได้<strong>1 ช่อง</strong> ในทุกทิศทาง (แนวตั้ง แนวนอน หรือทแยง)</li>
+            <li>กินโดยเดินแบบเดียวกัน</li>
+          </ul>
+
+          <h4>ราชินี (Queen)</h4>
+          <ul>
+            <li>เดินได้กี่ช่องก็ได้ในเส้นตรง: แนวนอน แนวตั้ง หรือทแยง ตราบใดที่ไม่มีหมากขวาง</li>
+            <li>กินโดยเดินแบบเดียวกัน</li>
+          </ul>
+
+          <h4>เรือ (Rook)</h4>
+          <ul>
+            <li>เดินได้กี่ช่องก็ได้แนวนอนหรือแนวตั้ง ตราบใดที่ไม่มีหมากขวาง</li>
+            <li>กินโดยเดินแบบเดียวกัน</li>
+          </ul>
+
+          <h4>บิชอป (Bishop)</h4>
+          <ul>
+            <li>เดินได้กี่ช่องก็ได้ตามแนวทแยง ตราบใดที่ไม่มีหมากขวาง</li>
+            <li>กินโดยเดินแบบเดียวกัน</li>
+          </ul>
+
+          <h4>ม้า (Knight)</h4>
+          <ul>
+            <li>เดินเป็นรูป<strong>L</strong>: 2 ช่องไปทิศหนึ่ง (แนวตั้งหรือแนวนอน) แล้ว 1 ช่องตั้งฉาก</li>
+            <li>ม้าสามารถ<strong>ข้าม</strong>หมากอื่นได้</li>
+            <li>กินโดยลงที่ช่องซึ่งมีหมากฝ่ายตรงข้าม</li>
+          </ul>
+
+          <h4>เบี้ย (Pawn)</h4>
+          <p>
+            เบี้ยเดินต่างกันระหว่างการเดินหน้าและการกิน
+            สำหรับฝ่ายขาว “เดินหน้า” คือ “ขึ้นด้านบนของแผนภาพ”
+            สำหรับฝ่ายดำ “เดินหน้า” คือ “ลงด้านล่างของแผนภาพ”
+          </p>
+          <ul>
+            <li>เดินหน้า<strong>1 ช่อง</strong>ได้เมื่อช่องหน้าว่าง</li>
+            <li>ในครั้งแรกของเบี้ย สามารถเดินหน้า<strong>2 ช่อง</strong>ได้ หากทั้งสองช่องว่าง</li>
+            <li>กินทแยงหน้า<strong>1 ช่อง</strong> (ซ้ายหน้าหรือขวาหน้า)</li>
+            <li>เบี้ย<strong>ไม่กิน</strong>โดยเดินตรงหน้า</li>
+          </ul>
+        </section>
+
+        <section id="special-moves">
+          <h2>การเดินพิเศษ</h2>
+
+          <dl>
+            <dt>การเข้าป้อม (Castling)</dt>
+            <dd>
+              <p>
+                การเข้าป้อมเป็นการเดินพิเศษที่เกี่ยวข้องกับ<strong>กษัตริย์</strong>และ<strong>เรือ</strong>ฝ่ายเดียวกัน
+                โดยกษัตริย์เดินไปทางเรือ<strong>2 ช่อง</strong> แล้วนำเรือไปวางที่ช่องติดกับกษัตริย์อีกด้านหนึ่ง
+              </p>
+
+              <p>การเข้าป้อมทำได้ก็ต่อเมื่อเป็นไปตามเงื่อนไขทั้งหมดนี้:</p>
+              <ul>
+                <li>กษัตริย์ยังไม่เคยเดินมาก่อน</li>
+                <li>เรือที่ใช้ยังไม่เคยเดินมาก่อน</li>
+                <li>ไม่มีหมากอยู่ระหว่างกษัตริย์กับเรือนั้น</li>
+                <li>ขณะเข้าป้อม กษัตริย์<strong>ไม่ได้ถูกรุก</strong></li>
+                <li>กษัตริย์<strong>ไม่เดินผ่าน</strong>ช่องที่ถูกรุก</li>
+                <li>ช่องปลายทางของกษัตริย์<strong>ไม่ถูกรุก</strong></li>
+              </ul>
+            </dd>
+
+            <dt>การกินผ่าน (En passant)</dt>
+            <dd>
+              <p>
+                การกินผ่านใช้กับเบี้ยเท่านั้น
+                หากเบี้ยของฝ่ายตรงข้ามเดินหน้า 2 ช่องจากตำแหน่งเริ่มต้น และมาหยุดอยู่ติดกันในแนวนอนกับเบี้ยของเรา
+                เบี้ยของเราสามารถกินเบี้ยนั้นได้<strong>เสมือนว่า</strong>มันเดินมาเพียง 1 ช่อง
+              </p>
+
+              <p>
+                เบี้ยที่กินจะเดินทแยงหน้า 1 ช่องไปยัง “ช่องที่ถูกผ่าน” และนำเบี้ยที่ถูกกินออกจากกระดาน
+              </p>
+
+              <p>
+                การกินผ่านทำได้<strong>ทันทีในตาถัดไปเท่านั้น</strong>หลังการเดิน 2 ช่อง
+                หากไม่ทำทันที สิทธิ์นี้จะหายไป
+              </p>
+            </dd>
+
+            <dt>การเลื่อนขั้นของเบี้ย (Promotion)</dt>
+            <dd>
+              <p>
+                เมื่อเบี้ยไปถึงแถวสุดท้าย (ขอบฝั่งตรงข้าม) เบี้ยจะ<strong>เลื่อนขั้น</strong>
+                โดยถูกแทนที่ด้วย<strong>ราชินี</strong> <strong>เรือ</strong> <strong>บิชอป</strong> หรือ<strong>ม้า</strong>สีเดียวกัน
+              </p>
+
+              <p>
+                ไม่สามารถเลื่อนเป็นกษัตริย์ได้
+                ผู้เล่นเลือกได้อย่างอิสระ และไม่จำเป็นต้องมีหมากที่ถูกกินแล้ว “พร้อมใช้”
+                จึงสามารถมีราชินีหลายตัวได้
+              </p>
+            </dd>
+          </dl>
+        </section>
+
+        <section id="checkmate">
+          <h2>การรุกและรุกจน</h2>
+
+          <h3>คำนิยาม</h3>
+          <ul>
+            <li><strong>รุก (Check)</strong>: กษัตริย์ถูกโจมตีโดยหมากฝ่ายตรงข้ามอย่างน้อย 1 ตัว</li>
+            <li><strong>แก้รุก</strong>: เดินอย่างถูกกติกาเพื่อให้กษัตริย์ไม่ถูกรุกอีกต่อไป</li>
+            <li><strong>รุกจน (Checkmate)</strong>: กษัตริย์ถูกรุกและไม่มีการเดินที่ถูกกติกาใด ๆ ที่จะแก้รุกได้</li>
+          </ul>
+
+          <h3>การประกาศ “รุก”</h3>
+          <p>
+            สามารถประกาศ “รุก” ได้ แต่ไม่ใช่ข้อบังคับ
+            สิ่งสำคัญคือสถานะจริงของกระดาน
+          </p>
+
+          <h3>ทำอย่างไรเมื่อกษัตริย์ถูกรุก?</h3>
+          <p>เมื่อกษัตริย์ถูกรุก ผู้เล่นต้องเดินเพื่อแก้รุก เช่น:</p>
+          <ul>
+            <li>ย้ายกษัตริย์ไปช่องที่ไม่ถูกรุก</li>
+            <li>กินหมากที่รุก (หากหลังการกิน กษัตริย์ไม่ถูกรุก)</li>
+            <li>เอาหมากไปขวางแนวโจมตี (ใช้ได้เฉพาะการโจมตีระยะไกล: เรือ บิชอป ราชินี)</li>
+          </ul>
+        </section>
+
+        <section id="stalemate-and-draw">
+          <h2>สเตลเมตและการเสมอ</h2>
+
+          <h3>สเตลเมต (Stalemate)</h3>
+          <p>
+            เกิด<strong>สเตลเมต</strong>เมื่อผู้เล่นที่ถึงตาเดิน:
+            (1) ไม่ถูกรุก และ
+            (2) ไม่มี<strong>การเดินที่ถูกกติกา</strong>เลย
+            ในกรณีนี้ เกมจะ<strong>เสมอ</strong>
+          </p>
+
+          <h3>กรณีอื่น ๆ ของการเสมอ</h3>
+          <ul>
+            <li>
+              <strong>เสมอโดยตกลงกัน</strong>:
+              ผู้เล่นทั้งสองฝ่ายสามารถตกลงให้เสมอได้
+            </li>
+            <li>
+              <strong>เสมอโดยกำลังไม่พอ (Insufficient material)</strong>:
+              ทั้งสองฝ่ายไม่สามารถรุกจนได้แม้เล่นอย่างสมบูรณ์แบบ
+              (ตัวอย่าง: กษัตริย์ vs กษัตริย์; กษัตริย์+บิชอป vs กษัตริย์; กษัตริย์+ม้า vs กษัตริย์)
+            </li>
+            <li>
+              <strong>เสมอโดยซ้ำสามครั้ง (Threefold repetition)</strong>:
+              หากตำแหน่งเดียวกันเกิดขึ้น 3 ครั้ง (ผู้เล่นถึงตาเดินเหมือนกัน และสิทธิ์ต่าง ๆ เหมือนกัน เช่น เข้าป้อม/กินผ่าน)
+              อาจประกาศเสมอได้ ขึ้นกับกติกาการแข่งขันหรือแพลตฟอร์ม (อาจต้องขอ หรืออาจเป็นอัตโนมัติ)
+            </li>
+            <li>
+              <strong>กฎ 50 เดิน (Fifty-move rule)</strong>:
+              หากมีการเดินครบ<strong>50 เดินต่อฝ่าย</strong> (รวม<strong>100 ครึ่งเดิน</strong>) โดย<strong>ไม่มีการกิน</strong>และ<strong>ไม่มีการเดินเบี้ย</strong>
+              อาจประกาศเสมอได้ (อาจต้องขอ หรืออาจเป็นอัตโนมัติ ขึ้นกับกติกา)
+            </li>
+            <li>
+              <strong>ตำแหน่งตาย (Dead position)</strong>:
+              หากไม่ว่าจะเดินอย่างไร ก็ไม่สามารถเกิดรุกจนได้
+              เกมจะเสมอโดยไม่ขึ้นกับว่าฝ่ายใดถึงตาเดิน
+            </li>
+          </ul>
+        </section>
+
+        <section id="end-of-game">
+          <h2>การจบเกม</h2>
+
+          <ul>
+            <li>
+              เกมจบด้วย<strong>รุกจน</strong> (ชนะ), <strong>ยอมแพ้</strong>, หรือ<strong>เสมอ</strong>
+            </li>
+            <li>
+              ผู้เล่นสามารถ<strong>ยอมแพ้</strong>ได้ตลอดเวลา ซึ่งหมายถึงยอมรับความพ่ายแพ้
+            </li>
+            <li>
+              ในเกมที่มีเวลา ผู้เล่นอาจแพ้<strong>ตามเวลา</strong>หากใช้เวลาหมด ตามกติกาของรูปแบบเวลานั้น
+            </li>
+            <li>
+              ในซอฟต์แวร์ส่วนใหญ่ การเดินผิดกติกา (เช่น ปล่อยให้กษัตริย์ถูกรุก) มักถูกปฏิเสธ
+            </li>
+          </ul>
+        </section>
+
+        <section id="art-and-literature">
+          <h2>หมากรุกในศิลปะและวรรณกรรม</h2>
+
+          <p>
+            หมากรุกเป็นแรงบันดาลใจให้กับผลงานมากมาย นี่คือสองผลงานคลาสสิกที่มักถูกกล่าวถึง:
+          </p>
+
+          <dl>
+            <dt><q lang="la">Scacchi ludus</q> (1527) — Marco Girolamo Vida</dt>
+            <dd>บทกวีที่บรรยายเกมหมากรุกเชิงตำนานระหว่างเทพเจ้า</dd>
+
+            <dt><q lang="en">Caïssa: or The Game of Chess</q> (1772) — William Jones</dt>
+            <dd>บทกวีที่ทำให้ “ไคซา” เป็นสัญลักษณ์เชิงอุปมาของหมากรุกเป็นที่รู้จัก</dd>
+          </dl>
+
+          <figure>
+            <img
+              src="img/caissa-and-mercury-apollo-game.jpeg"
+              alt="ภาพประกอบฉากเชิงตำนานที่เกี่ยวข้องกับไคซา"
+              title="ภาพประกอบไคซา"
+              loading="lazy">
+            <figcaption>ภาพประกอบไคซา (สาธารณสมบัติ)</figcaption>
+          </figure>
+        </section>
+      </article>
+
+      <aside aria-label="ดูเพิ่มเติม">
+        <h2>ดูเพิ่มเติม</h2>
+        <p>รูปแบบเชิงวัฒนธรรมในตระกูลหมากรุก:</p>
+
+        <ul>
+          <li>
+            <strong><a href="https://th.ogi.page/" rel="external">Ōgi (王棋)</a></strong> —
+            เกมสายญี่ปุ่นที่ได้รับแรงบันดาลใจจากโชงิ เล่นบนกระดานเล็กลงและสามารถนำหมากที่กินแล้วกลับมาใช้ได้
+          </li>
+          <li>
+            <strong><a href="https://th.xiongqi.page/" rel="external">Xiongqi (熊棋)</a></strong> —
+            “หมากรุกแพนด้า” เล่นบนกระดาน 8 × 8 โดยผสมองค์ประกอบจากหมากรุกจีนและแบบตะวันตก
+          </li>
+        </ul>
+      </aside>
+
+      <nav aria-label="เลือกภาษา">
+        <h2>ภาษา</h2>
+        <p>หน้านี้มีให้บริการในภาษาอื่นด้วย:</p>
+
+        <ul>
+          <li><a title="Switch to English" href="https://en.chess.page/" lang="en">English</a></li>
+          <li><a title="Passer en français" href="https://fr.chess.page/" lang="fr">Français</a></li>
+          <li><a title="日本語に切り替える" href="https://ja.chess.page/" lang="ja">日本語</a></li>
+          <!-- <li><a title="เปลี่ยนเป็นภาษาไทย" href="https://th.chess.page/" lang="th">ภาษาไทย</a></li> -->
+          <li><a title="切换到中文" href="https://zh.chess.page/" lang="zh">中文</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        หน้านี้และเนื้อหาทั้งหมดอยู่ในสาธารณสมบัติภายใต้
+        <a rel="license external" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+        คุณสามารถคัดลอก แก้ไข และเผยแพร่ต่อได้โดยไม่ต้องขออนุญาต
+      </p>
+    </footer>
+  </body>
+</html>
